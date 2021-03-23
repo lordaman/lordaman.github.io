@@ -1,0 +1,177 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+/* .div-style {
+    
+} */
+
+body {
+    line-height:35px;
+}
+
+p {
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:35px;
+    text-align: center;
+    color: #092532;
+    padding: 10px;
+}
+
+a {
+    color: black;
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+a:hover {
+    color: grey;
+}
+.navbar{
+    background-color: #f9b7ab;
+    padding:0.5% 15% 0.5%;
+}
+.nav-item {
+    padding-left: 50px;
+}
+.introduction-div {
+    background-color: #f9b7ab;
+    height: 700px;
+    padding: 8% 5% 8% 15%;
+}
+.my-image {
+    display: inline;
+}
+.top {
+    float: right;
+    display: inline;
+    text-align: center;
+    padding: 100px;
+}
+.buffer {
+    padding: 0 200px;
+}
+.pink-heading {
+    color: #f9b7ab;
+}
+.justify-div {
+    justify-content:flex;
+}
+.pad {
+    border: 2px solid green;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+}
+.center {
+    margin: auto;
+    padding: 1% 10% 1%;
+}
+.chess-iframe {
+    padding: 1% 5% 1%;
+    text-align: center;
+}
+  
+/* My Skills section */
+#main-vis {
+    width: 70%;
+    margin: auto;
+    background-image: url(skills.png);
+}
+
+.project-circle {
+    animation: circles 2s infinite;
+}
+
+@keyframes circles {
+    0% {r:9;}
+    50% {r:13;}
+    100% {r:9;}
+}
+
+.project-circle:hover {
+    r:15 !important;
+}
+.project-circle{transition:.3s all;cursor:crosshair;stroke:transparent;stroke-width:3}.movement
+circle{transition:.3s all}.movement:hover 
+circle:not(.project-circle){fill:#3a25ff}.movement
+.wp20-fill-color-1,.wp20-fill-color-1:hover,.wp20-fill-color-1.active{fill:#0154d5}
+.wp20-underline-color-1{border-bottom:.125em solid #0154d5}
+.wp20-color-2{border-color:#dc0816 !important}
+.wp20-fill-color-2,.wp20-fill-color-2:hover,.wp20-fill-color-2.active{fill:#dc0816}
+.wp20-underline-color-2{border-bottom:.125em solid #dc0816}
+.wp20-color-3{border-color:#028b3f !important}
+.wp20-fill-color-3,.wp20-fill-color-3:hover,.wp20-fill-color-3.active{fill:#028b3f}
+.wp20-underline-color-3{border-bottom:.125em solid #028b3f}.wp20-color-4{border-color:#ee8019 !important}
+.wp20-fill-color-4,.wp20-fill-color-4:hover,.wp20-fill-color-4.active{fill:#ee8019}
+.wp20-underline-color-4{border-bottom:.125em solid #ee8019}.wp20-color-5{border-color:#049dff !important}
+.wp20-fill-color-5,.wp20-fill-color-5:hover,.wp20-fill-color-5.active{fill:#049dff}
+.wp20-underline-color-5{border-bottom:.125em solid #049dff}.wp20-color-6{border-color:#f0bc00 !important}
+.wp20-fill-color-6,.wp20-fill-color-6:hover,.wp20-fill-color-6.active{fill:#f0bc00}
+.wp20-underline-color-6{border-bottom:.125em solid #f0bc00}.wp20-color-7{border-color:#e679a6 !important}
+.wp20-fill-color-7,.wp20-fill-color-7:hover,.wp20-fill-color-7.active{fill:#e679a6}
+.wp20-underline-color-7{border-bottom:.125em solid #e679a6}.wp20-color-8{border-color:#8401d5 !important}
+.wp20-fill-color-8,.wp20-fill-color-8:hover,.wp20-fill-color-8.active{fill:#8401d5}
+.wp20-underline-color-8{border-bottom:.125em solid #8401d5}.wp20-color-9{border-color:#5eb34f !important}
+.wp20-fill-color-9,.wp20-fill-color-9:hover,.wp20-fill-color-9.active{fill:#5eb34f}
+.wp20-underline-color-9{border-bottom:.125em solid #5eb34f}.wp20-color-10{border-color:#fd6363 !important}
+.wp20-fill-color-10,.wp20-fill-color-10:hover,.wp20-fill-color-10.active{fill:#fd6363}
+.wp20-underline-color-10{border-bottom:.125em solid #fd6363}.wp20-color-11{border-color:#e9e7c4 !important}
+.wp20-fill-color-11,.wp20-fill-color-11:hover,.wp20-fill-color-11.active{fill:#e9e7c4}
+
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+.fa:hover {
+    color: black !important;
+}
+
+blockquote {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+}
+.author {
+    font-family: 'Tangerine', serif;
+    font-size: 30px;
+    float: right;
+}
+#chess-marquee {
+    overflow: hidden;
+    height: 415px;
+}
+
+#chess-marquee div {
+    position: relative;
+    animation: CSSright linear 18s infinite;
+}
+@keyframes CSSright {
+    0% { right: -100% !important}
+    100% { right: 100% !important}
+  }
+  
