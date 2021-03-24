@@ -20,6 +20,14 @@ h1 {
     font-size: 80px;
     margin: 0 auto;
     text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    margin: 0 auto;
+    text-align: center;
     padding: 10px;
 }
 h3 {
@@ -39,6 +47,11 @@ a {
 a:hover {
     color: grey;
 }
+
+section {
+    padding: 80px 0 80px 0;
+}
+
 .navbar{
     background-color: #f9b7ab;
     padding:0.5% 15% 0.5%;
@@ -166,12 +179,31 @@ blockquote {
     height: 415px;
 }
 
-#chess-marquee div {
+/* #chess-marquee div {
     position: relative;
     animation: CSSright linear 18s infinite;
 }
 @keyframes CSSright {
     0% { right: -100% !important}
     100% { right: 100% !important}
+  } */
+
+  hr {
+    stroke-width:30px !important;
+    border-style: dotted;
+    border-width: thick 0 0 0;
+    border-color: green;
+    width: 6%;
   }
-  
+
+  footer {
+    background-color: #f9b7ab;
+    padding: 1px;
+    margin: 0 auto;
+  }
+
+  .btn-custom {
+      margin: 0 auto !important;
+      padding: 1% !important;
+
+  }
