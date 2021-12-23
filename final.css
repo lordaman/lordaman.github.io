@@ -16,7 +16,8 @@ p {
 }
 
 h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Yusei Magic', sans-serif;
     font-size: 80px;
     margin: 0 auto;
     text-align: center;
@@ -24,14 +25,16 @@ h1 {
 }
 
 h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Yusei Magic', sans-serif;
     font-size: 60px;
     margin: 0 auto;
     text-align: center;
     padding: 10px;
 }
 h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: 'Yusei Magic', sans-serif;
     font-size:35px;
     text-align: center;
     color: #092532;
@@ -49,7 +52,7 @@ a:hover {
 }
 
 section {
-    padding: 80px 0 80px 0;
+    padding: 3% 2% 3% 2%;
 }
 
 .navbar{
@@ -61,17 +64,22 @@ section {
 }
 .introduction-div {
     background-color: #f9b7ab;
-    height: 700px;
     padding: 8% 5% 8% 15%;
 }
 .my-image {
     display: inline;
 }
+
+.rounded-circle {
+    height: 380px;
+    width: 380px;
+}
+
 .top {
-    float: right;
     display: inline;
     text-align: center;
-    padding: 100px;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 .buffer {
     padding: 0 200px;
@@ -89,9 +97,20 @@ section {
     padding: 10px;
 }
 .center {
-    margin: auto;
-    padding: 1% 10% 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    /* padding: 10px; */
+}
+
 .chess-iframe {
     padding: 1% 5% 1%;
     text-align: center;
@@ -99,13 +118,25 @@ section {
   
 /* My Skills section */
 #main-vis {
-    width: 70%;
+    /* width: 70%; */
+    padding: 10%;
     margin: auto;
-    background-image: url(skills.png);
+    /* background-image: url(skills.png); */
 }
 
 .project-circle {
-    animation: circles 2s infinite;
+    animation: 2s infinite circles;
+}
+
+.incol {
+    border: 5px solid green;
+    border-radius: 4%;
+    margin: 0 auto;
+}
+
+.form-submit-button {
+    background-color: lightblue;
+    width: 10%;
 }
 
 @keyframes circles {
@@ -165,9 +196,13 @@ circle:not(.project-circle){fill:#3a25ff}.movement
     color: black !important;
 }
 
-blockquote {
+.blockquote {
     font-family: 'Tangerine', serif;
     font-size: 48px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 3%;
+    display: flex;
 }
 .author {
     font-family: 'Tangerine', serif;
@@ -178,15 +213,6 @@ blockquote {
     overflow: hidden;
     height: 415px;
 }
-
-/* #chess-marquee div {
-    position: relative;
-    animation: CSSright linear 18s infinite;
-}
-@keyframes CSSright {
-    0% { right: -100% !important}
-    100% { right: 100% !important}
-  } */
 
   hr {
     stroke-width:30px !important;
@@ -201,3 +227,104 @@ blockquote {
     padding: 1px;
     margin: 0 auto;
   }
+
+  #chess-iframe {
+    height:100%; 
+    width: 80%;
+  }
+
+  #dfoot {
+    display: block;
+}
+
+#hfoot {
+    display: none;
+}
+
+  @media screen and (max-width: 1000px){        
+    .navbar{
+       display: none;
+    }
+
+    .icon-bar {
+        display: none;
+    }
+
+    #chess-iframe {
+        height: 400px;
+    }
+
+    .rounded-circle {
+        height: 250px;
+        width: 250px;
+    }
+
+    body {
+        line-height:20px;
+    }
+    
+    p {
+        font-family: 'Yusei Magic', sans-serif;
+        font-size: 14px;
+    }
+    
+    h1 {
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        font-family: 'Yusei Magic', sans-serif;
+        font-size: 50px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2% 10% 2% 10%;
+    }
+    
+    h2 {
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        font-family: 'Yusei Magic', sans-serif;
+        font-size: 40px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 5%;
+    }
+    h3 {
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        font-family: 'Yusei Magic', sans-serif;
+        font-size:25px;
+        text-align: center;
+        color: #092532;
+        padding: 4%;
+    }
+    
+    a {
+        color: black;
+        font-family: 'Yusei Magic', sans-serif;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .blockquote {
+        font-family: 'Tangerine', serif;
+        font-size: 35px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 3%;
+        justify-content: center;
+    }
+    .author {
+        font-family: 'Tangerine', serif;
+        font-size: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .form-submit-button {
+        width: 20%;
+    }
+
+    #dfoot {
+        display: none;
+    }
+
+    #hfoot {
+        display: block;
+    }
+}
